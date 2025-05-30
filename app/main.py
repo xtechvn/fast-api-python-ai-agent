@@ -30,7 +30,6 @@ app.add_middleware(
 # THêm các router
 app.include_router(user.router, prefix=f"{settings.API_V1_STR}/user", tags=["user"])
 
-
 # Root Endpoint
 @app.get("/", include_in_schema=False)
 async def root():
@@ -44,9 +43,8 @@ async def root():
         "docs": f"{settings.API_V1_STR}/docs"
     }
 
-
 # Khởi động ứng dụng
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8002, reload=True)

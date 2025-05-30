@@ -4,16 +4,17 @@ import os
 from dotenv import load_dotenv
 
 # Đường dẫn tuyệt đối đến thư mục gốc dự án
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # File .env nên được đặt trong thư mục gốc dự án
-ENV_FILE = os.path.join(BASE_DIR + "/FastApiProject", ".env")
-if os.path.exists(ENV_FILE):
-    # Load biến môi trường từ file .env
-    load_dotenv(ENV_FILE)
-else:
-    print(".env not found")
+# ENV_FILE = os.path.join(BASE_DIR + "/FastApiProject", ".env")
+# if os.path.exists(ENV_FILE):
+#     # Load biến môi trường từ file .env
+#     load_dotenv(ENV_FILE)
+# else:
+#     print(".env not found")
 
+load_dotenv()
 
 class Settings(BaseSettings):
     # Cấu hình API
@@ -33,12 +34,12 @@ class Settings(BaseSettings):
         return f"mssql+pyodbc://{self.SQL_USER}:{self.SQL_PASSWORD}@{self.SQL_SERVER}/{self.SQL_DATABASE}?driver=ODBC+Driver+17+for+SQL+Server"
 
     # Cấu hình đọc từ file .env - sử dụng model_config thay vì class Config
-    model_config = {
-        "env_file": ENV_FILE,
-        "env_file_encoding": "utf-8",
-        "case_sensitive": True,
-        "extra": "ignore",
-    }
+    # model_config = {
+    #     "env_file": ENV_FILE,
+    #     "env_file_encoding": "utf-8",
+    #     "case_sensitive": True,
+    #     "extra": "ignore",
+    # }
 
 
 @lru_cache()
