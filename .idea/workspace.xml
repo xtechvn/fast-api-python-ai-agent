@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1502c0f0-3225-4662-8bdd-45919c26053a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/routes/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/routes/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
+    <list default="true" id="1502c0f0-3225-4662-8bdd-45919c26053a" name="Changes" comment="fix lỗi conn">
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +66,15 @@
       <option name="presentableId" value="Default" />
       <updated>1747490067177</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix lỗi conn">
+      <option name="closed" value="true" />
+      <created>1748621049471</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748621049471</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,5 +87,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix lỗi conn" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix lỗi conn" />
   </component>
 </project>
